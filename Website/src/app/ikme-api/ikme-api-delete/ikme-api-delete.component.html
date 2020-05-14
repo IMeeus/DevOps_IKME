@@ -1,0 +1,7 @@
+<p>Hier kan je een planning verwijderen door de id van een bestaande planning in te voeren.</p>
+<br>
+<div>
+    <input id="plan-id-input" type="text" pKeyFilter="int" pInputText [(ngModel)]="InputId" placeholder="Plan Id">
+</div>
+<br>
+<p-button label="Delete Plan" styleClass="ui-button-danger" [disabled]="disableDelete" (click)="DeletePlan()"></p-button>

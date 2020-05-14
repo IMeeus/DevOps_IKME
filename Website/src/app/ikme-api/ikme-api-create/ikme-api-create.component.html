@@ -1,0 +1,9 @@
+<p>Hier kan je een planning-data json bestand uploaden om een nieuw plan aan te maken.</p>
+<p>For some reason lagged de browser bij het uploaden, dit moet nog gefixed worden...</p>
+<br>
+<input
+  style="display: none"
+  type="file" (change)="onFileChanged($event)"
+  #fileInput>
+<button pButton label="Select File" (click)="fileInput.click()" style="margin-right: 5px;"></button>
+<button pButton label="Create Plan" (click)="onUpload()" [disabled]="planToCreate == null"></button>

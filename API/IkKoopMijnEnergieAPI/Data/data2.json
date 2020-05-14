@@ -1,0 +1,866 @@
+﻿[
+  {
+    "Total": 291,
+    "Sun": 54,
+    "Wind": 93,
+    "Nuclear": 74,
+    "Biomassa": 41,
+    "Steg": 29,
+    "Error": 0
+  },
+  {
+    "Total": 431,
+    "Sun": 300,
+    "Wind": 44,
+    "Nuclear": 41,
+    "Biomassa": 14,
+    "Steg": 32,
+    "Error": 0
+  },
+  {
+    "Total": 524,
+    "Sun": 66,
+    "Wind": 52,
+    "Nuclear": 78,
+    "Biomassa": 77,
+    "Steg": 251,
+    "Error": 0
+  },
+  {
+    "Total": 638,
+    "Sun": 260,
+    "Wind": 14,
+    "Nuclear": 148,
+    "Biomassa": 98,
+    "Steg": 118,
+    "Error": 0
+  },
+  {
+    "Total": 117,
+    "Sun": 1,
+    "Wind": 3,
+    "Nuclear": 34,
+    "Biomassa": 26,
+    "Steg": 53,
+    "Error": 0
+  },
+  {
+    "Total": 303,
+    "Sun": 1,
+    "Wind": 227,
+    "Nuclear": 6,
+    "Biomassa": 30,
+    "Steg": 39,
+    "Error": 0
+  },
+  {
+    "Total": 681,
+    "Sun": 330,
+    "Wind": 26,
+    "Nuclear": 83,
+    "Biomassa": 106,
+    "Steg": 136,
+    "Error": 0
+  },
+  {
+    "Total": 831,
+    "Sun": 313,
+    "Wind": 167,
+    "Nuclear": 244,
+    "Biomassa": 6,
+    "Steg": 101,
+    "Error": 0
+  },
+  {
+    "Total": 417,
+    "Sun": 230,
+    "Wind": 52,
+    "Nuclear": 1,
+    "Biomassa": 49,
+    "Steg": 85,
+    "Error": 0
+  },
+  {
+    "Total": 382,
+    "Sun": 201,
+    "Wind": 17,
+    "Nuclear": 32,
+    "Biomassa": 59,
+    "Steg": 73,
+    "Error": 0
+  },
+  {
+    "Total": 445,
+    "Sun": 235,
+    "Wind": 33,
+    "Nuclear": 39,
+    "Biomassa": 26,
+    "Steg": 112,
+    "Error": 0
+  },
+  {
+    "Total": 838,
+    "Sun": 52,
+    "Wind": 100,
+    "Nuclear": 1,
+    "Biomassa": 571,
+    "Steg": 114,
+    "Error": 0
+  },
+  {
+    "Total": 433,
+    "Sun": 53,
+    "Wind": 22,
+    "Nuclear": 133,
+    "Biomassa": 150,
+    "Steg": 75,
+    "Error": 0
+  },
+  {
+    "Total": 323,
+    "Sun": 66,
+    "Wind": 129,
+    "Nuclear": 45,
+    "Biomassa": 43,
+    "Steg": 40,
+    "Error": 0
+  },
+  {
+    "Total": 14,
+    "Sun": 2,
+    "Wind": 2,
+    "Nuclear": 4,
+    "Biomassa": 0,
+    "Steg": 6,
+    "Error": 0
+  },
+  {
+    "Total": 913,
+    "Sun": 301,
+    "Wind": 142,
+    "Nuclear": 200,
+    "Biomassa": 150,
+    "Steg": 120,
+    "Error": 0
+  },
+  {
+    "Total": 871,
+    "Sun": 189,
+    "Wind": 1,
+    "Nuclear": 225,
+    "Biomassa": 409,
+    "Steg": 47,
+    "Error": 0
+  },
+  {
+    "Total": 428,
+    "Sun": 19,
+    "Wind": 29,
+    "Nuclear": 107,
+    "Biomassa": 255,
+    "Steg": 18,
+    "Error": 0
+  },
+  {
+    "Total": 11,
+    "Sun": 4,
+    "Wind": 1,
+    "Nuclear": 1,
+    "Biomassa": 3,
+    "Steg": 2,
+    "Error": 0
+  },
+  {
+    "Total": 588,
+    "Sun": 116,
+    "Wind": 213,
+    "Nuclear": 185,
+    "Biomassa": 57,
+    "Steg": 17,
+    "Error": 0
+  },
+  {
+    "Total": 123,
+    "Sun": 75,
+    "Wind": 8,
+    "Nuclear": 3,
+    "Biomassa": 28,
+    "Steg": 9,
+    "Error": 0
+  },
+  {
+    "Total": 681,
+    "Sun": 89,
+    "Wind": 60,
+    "Nuclear": 158,
+    "Biomassa": 43,
+    "Steg": 331,
+    "Error": 0
+  },
+  {
+    "Total": 706,
+    "Sun": 268,
+    "Wind": 71,
+    "Nuclear": 263,
+    "Biomassa": 57,
+    "Steg": 47,
+    "Error": 0
+  },
+  {
+    "Total": 910,
+    "Sun": 206,
+    "Wind": 347,
+    "Nuclear": 270,
+    "Biomassa": 3,
+    "Steg": 84,
+    "Error": 0
+  },
+  {
+    "Total": 434,
+    "Sun": 94,
+    "Wind": 12,
+    "Nuclear": 235,
+    "Biomassa": 20,
+    "Steg": 73,
+    "Error": 0
+  },
+  {
+    "Total": 527,
+    "Sun": 134,
+    "Wind": 218,
+    "Nuclear": 23,
+    "Biomassa": 69,
+    "Steg": 83,
+    "Error": 0
+  },
+  {
+    "Total": 884,
+    "Sun": 118,
+    "Wind": 157,
+    "Nuclear": 266,
+    "Biomassa": 191,
+    "Steg": 152,
+    "Error": 0
+  },
+  {
+    "Total": 564,
+    "Sun": 194,
+    "Wind": 116,
+    "Nuclear": 2,
+    "Biomassa": 195,
+    "Steg": 57,
+    "Error": 0
+  },
+  {
+    "Total": 645,
+    "Sun": 43,
+    "Wind": 284,
+    "Nuclear": 16,
+    "Biomassa": 290,
+    "Steg": 12,
+    "Error": 0
+  },
+  {
+    "Total": 863,
+    "Sun": 117,
+    "Wind": 69,
+    "Nuclear": 578,
+    "Biomassa": 27,
+    "Steg": 72,
+    "Error": 0
+  },
+  {
+    "Total": 814,
+    "Sun": 236,
+    "Wind": 15,
+    "Nuclear": 45,
+    "Biomassa": 237,
+    "Steg": 281,
+    "Error": 0
+  },
+  {
+    "Total": 908,
+    "Sun": 179,
+    "Wind": 173,
+    "Nuclear": 267,
+    "Biomassa": 163,
+    "Steg": 126,
+    "Error": 0
+  },
+  {
+    "Total": 522,
+    "Sun": 208,
+    "Wind": 57,
+    "Nuclear": 144,
+    "Biomassa": 49,
+    "Steg": 64,
+    "Error": 0
+  },
+  {
+    "Total": 17,
+    "Sun": 9,
+    "Wind": 3,
+    "Nuclear": 1,
+    "Biomassa": 1,
+    "Steg": 3,
+    "Error": 0
+  },
+  {
+    "Total": 463,
+    "Sun": 3,
+    "Wind": 25,
+    "Nuclear": 228,
+    "Biomassa": 154,
+    "Steg": 53,
+    "Error": 0
+  },
+  {
+    "Total": 415,
+    "Sun": 33,
+    "Wind": 41,
+    "Nuclear": 42,
+    "Biomassa": 9,
+    "Steg": 290,
+    "Error": 0
+  },
+  {
+    "Total": 662,
+    "Sun": 26,
+    "Wind": 293,
+    "Nuclear": 229,
+    "Biomassa": 65,
+    "Steg": 49,
+    "Error": 0
+  },
+  {
+    "Total": 247,
+    "Sun": 75,
+    "Wind": 88,
+    "Nuclear": 19,
+    "Biomassa": 27,
+    "Steg": 38,
+    "Error": 0
+  },
+  {
+    "Total": 425,
+    "Sun": 150,
+    "Wind": 29,
+    "Nuclear": 192,
+    "Biomassa": 36,
+    "Steg": 18,
+    "Error": 0
+  },
+  {
+    "Total": 151,
+    "Sun": 13,
+    "Wind": 3,
+    "Nuclear": 5,
+    "Biomassa": 89,
+    "Steg": 41,
+    "Error": 0
+  },
+  {
+    "Total": 582,
+    "Sun": 154,
+    "Wind": 61,
+    "Nuclear": 11,
+    "Biomassa": 169,
+    "Steg": 187,
+    "Error": 0
+  },
+  {
+    "Total": 698,
+    "Sun": 213,
+    "Wind": 240,
+    "Nuclear": 52,
+    "Biomassa": 10,
+    "Steg": 183,
+    "Error": 0
+  },
+  {
+    "Total": 186,
+    "Sun": 58,
+    "Wind": 36,
+    "Nuclear": 11,
+    "Biomassa": 55,
+    "Steg": 26,
+    "Error": 0
+  },
+  {
+    "Total": 447,
+    "Sun": 136,
+    "Wind": 153,
+    "Nuclear": 15,
+    "Biomassa": 71,
+    "Steg": 72,
+    "Error": 0
+  },
+  {
+    "Total": 673,
+    "Sun": 312,
+    "Wind": 278,
+    "Nuclear": 27,
+    "Biomassa": 4,
+    "Steg": 52,
+    "Error": 0
+  },
+  {
+    "Total": 335,
+    "Sun": 197,
+    "Wind": 39,
+    "Nuclear": 1,
+    "Biomassa": 75,
+    "Steg": 23,
+    "Error": 0
+  },
+  {
+    "Total": 519,
+    "Sun": 49,
+    "Wind": 38,
+    "Nuclear": 201,
+    "Biomassa": 56,
+    "Steg": 175,
+    "Error": 0
+  },
+  {
+    "Total": 30,
+    "Sun": 6,
+    "Wind": 5,
+    "Nuclear": 3,
+    "Biomassa": 6,
+    "Steg": 10,
+    "Error": 0
+  },
+  {
+    "Total": 552,
+    "Sun": 5,
+    "Wind": 55,
+    "Nuclear": 261,
+    "Biomassa": 189,
+    "Steg": 42,
+    "Error": 0
+  },
+  {
+    "Total": 985,
+    "Sun": 363,
+    "Wind": 124,
+    "Nuclear": 151,
+    "Biomassa": 217,
+    "Steg": 130,
+    "Error": 0
+  },
+  {
+    "Total": 830,
+    "Sun": 222,
+    "Wind": 128,
+    "Nuclear": 56,
+    "Biomassa": 223,
+    "Steg": 201,
+    "Error": 0
+  },
+  {
+    "Total": 458,
+    "Sun": 7,
+    "Wind": 153,
+    "Nuclear": 54,
+    "Biomassa": 201,
+    "Steg": 43,
+    "Error": 0
+  },
+  {
+    "Total": 627,
+    "Sun": 21,
+    "Wind": 19,
+    "Nuclear": 113,
+    "Biomassa": 223,
+    "Steg": 251,
+    "Error": 0
+  },
+  {
+    "Total": 740,
+    "Sun": 291,
+    "Wind": 14,
+    "Nuclear": 173,
+    "Biomassa": 181,
+    "Steg": 81,
+    "Error": 0
+  },
+  {
+    "Total": 109,
+    "Sun": 14,
+    "Wind": 8,
+    "Nuclear": 5,
+    "Biomassa": 25,
+    "Steg": 57,
+    "Error": 0
+  },
+  {
+    "Total": 681,
+    "Sun": 524,
+    "Wind": 78,
+    "Nuclear": 17,
+    "Biomassa": 58,
+    "Steg": 4,
+    "Error": 0
+  },
+  {
+    "Total": 703,
+    "Sun": 149,
+    "Wind": 49,
+    "Nuclear": 178,
+    "Biomassa": 129,
+    "Steg": 198,
+    "Error": 0
+  },
+  {
+    "Total": 787,
+    "Sun": 96,
+    "Wind": 9,
+    "Nuclear": 159,
+    "Biomassa": 270,
+    "Steg": 253,
+    "Error": 0
+  },
+  {
+    "Total": 934,
+    "Sun": 293,
+    "Wind": 32,
+    "Nuclear": 430,
+    "Biomassa": 155,
+    "Steg": 24,
+    "Error": 0
+  },
+  {
+    "Total": 151,
+    "Sun": 12,
+    "Wind": 39,
+    "Nuclear": 50,
+    "Biomassa": 42,
+    "Steg": 8,
+    "Error": 0
+  },
+  {
+    "Total": 378,
+    "Sun": 1,
+    "Wind": 228,
+    "Nuclear": 133,
+    "Biomassa": 8,
+    "Steg": 8,
+    "Error": 0
+  },
+  {
+    "Total": 69,
+    "Sun": 21,
+    "Wind": 0,
+    "Nuclear": 10,
+    "Biomassa": 24,
+    "Steg": 14,
+    "Error": 0
+  },
+  {
+    "Total": 227,
+    "Sun": 5,
+    "Wind": 76,
+    "Nuclear": 46,
+    "Biomassa": 36,
+    "Steg": 64,
+    "Error": 0
+  },
+  {
+    "Total": 908,
+    "Sun": 28,
+    "Wind": 285,
+    "Nuclear": 39,
+    "Biomassa": 101,
+    "Steg": 455,
+    "Error": 0
+  },
+  {
+    "Total": 873,
+    "Sun": 67,
+    "Wind": 391,
+    "Nuclear": 167,
+    "Biomassa": 95,
+    "Steg": 153,
+    "Error": 0
+  },
+  {
+    "Total": 422,
+    "Sun": 55,
+    "Wind": 58,
+    "Nuclear": 20,
+    "Biomassa": 14,
+    "Steg": 275,
+    "Error": 0
+  },
+  {
+    "Total": 627,
+    "Sun": 180,
+    "Wind": 27,
+    "Nuclear": 136,
+    "Biomassa": 93,
+    "Steg": 191,
+    "Error": 0
+  },
+  {
+    "Total": 659,
+    "Sun": 184,
+    "Wind": 215,
+    "Nuclear": 1,
+    "Biomassa": 89,
+    "Steg": 170,
+    "Error": 0
+  },
+  {
+    "Total": 578,
+    "Sun": 202,
+    "Wind": 22,
+    "Nuclear": 258,
+    "Biomassa": 37,
+    "Steg": 59,
+    "Error": 0
+  },
+  {
+    "Total": 955,
+    "Sun": 397,
+    "Wind": 206,
+    "Nuclear": 81,
+    "Biomassa": 232,
+    "Steg": 39,
+    "Error": 0
+  },
+  {
+    "Total": 538,
+    "Sun": 165,
+    "Wind": 124,
+    "Nuclear": 22,
+    "Biomassa": 13,
+    "Steg": 214,
+    "Error": 0
+  },
+  {
+    "Total": 93,
+    "Sun": 38,
+    "Wind": 7,
+    "Nuclear": 28,
+    "Biomassa": 9,
+    "Steg": 11,
+    "Error": 0
+  },
+  {
+    "Total": 335,
+    "Sun": 23,
+    "Wind": 200,
+    "Nuclear": 94,
+    "Biomassa": 13,
+    "Steg": 5,
+    "Error": 0
+  },
+  {
+    "Total": 921,
+    "Sun": 23,
+    "Wind": 228,
+    "Nuclear": 96,
+    "Biomassa": 90,
+    "Steg": 484,
+    "Error": 0
+  },
+  {
+    "Total": 187,
+    "Sun": 113,
+    "Wind": 1,
+    "Nuclear": 33,
+    "Biomassa": 21,
+    "Steg": 19,
+    "Error": 0
+  },
+  {
+    "Total": 706,
+    "Sun": 125,
+    "Wind": 3,
+    "Nuclear": 105,
+    "Biomassa": 318,
+    "Steg": 155,
+    "Error": 0
+  },
+  {
+    "Total": 381,
+    "Sun": 190,
+    "Wind": 39,
+    "Nuclear": 95,
+    "Biomassa": 15,
+    "Steg": 42,
+    "Error": 0
+  },
+  {
+    "Total": 228,
+    "Sun": 27,
+    "Wind": 28,
+    "Nuclear": 32,
+    "Biomassa": 94,
+    "Steg": 47,
+    "Error": 0
+  },
+  {
+    "Total": 538,
+    "Sun": 185,
+    "Wind": 247,
+    "Nuclear": 13,
+    "Biomassa": 61,
+    "Steg": 32,
+    "Error": 0
+  },
+  {
+    "Total": 241,
+    "Sun": 65,
+    "Wind": 42,
+    "Nuclear": 94,
+    "Biomassa": 4,
+    "Steg": 36,
+    "Error": 0
+  },
+  {
+    "Total": 430,
+    "Sun": 62,
+    "Wind": 48,
+    "Nuclear": 279,
+    "Biomassa": 13,
+    "Steg": 28,
+    "Error": 0
+  },
+  {
+    "Total": 319,
+    "Sun": 78,
+    "Wind": 140,
+    "Nuclear": 5,
+    "Biomassa": 96,
+    "Steg": 0,
+    "Error": 0
+  },
+  {
+    "Total": 423,
+    "Sun": 1,
+    "Wind": 127,
+    "Nuclear": 168,
+    "Biomassa": 35,
+    "Steg": 92,
+    "Error": 0
+  },
+  {
+    "Total": 185,
+    "Sun": 11,
+    "Wind": 20,
+    "Nuclear": 24,
+    "Biomassa": 17,
+    "Steg": 113,
+    "Error": 0
+  },
+  {
+    "Total": 39,
+    "Sun": 10,
+    "Wind": 0,
+    "Nuclear": 25,
+    "Biomassa": 1,
+    "Steg": 3,
+    "Error": 0
+  },
+  {
+    "Total": 988,
+    "Sun": 258,
+    "Wind": 583,
+    "Nuclear": 102,
+    "Biomassa": 1,
+    "Steg": 44,
+    "Error": 0
+  },
+  {
+    "Total": 555,
+    "Sun": 117,
+    "Wind": 77,
+    "Nuclear": 299,
+    "Biomassa": 11,
+    "Steg": 51,
+    "Error": 0
+  },
+  {
+    "Total": 316,
+    "Sun": 66,
+    "Wind": 11,
+    "Nuclear": 143,
+    "Biomassa": 4,
+    "Steg": 92,
+    "Error": 0
+  },
+  {
+    "Total": 226,
+    "Sun": 99,
+    "Wind": 24,
+    "Nuclear": 2,
+    "Biomassa": 57,
+    "Steg": 44,
+    "Error": 0
+  },
+  {
+    "Total": 237,
+    "Sun": 30,
+    "Wind": 89,
+    "Nuclear": 14,
+    "Biomassa": 63,
+    "Steg": 41,
+    "Error": 0
+  },
+  {
+    "Total": 407,
+    "Sun": 126,
+    "Wind": 31,
+    "Nuclear": 32,
+    "Biomassa": 30,
+    "Steg": 188,
+    "Error": 0
+  },
+  {
+    "Total": 664,
+    "Sun": 168,
+    "Wind": 59,
+    "Nuclear": 241,
+    "Biomassa": 125,
+    "Steg": 71,
+    "Error": 0
+  },
+  {
+    "Total": 274,
+    "Sun": 200,
+    "Wind": 3,
+    "Nuclear": 17,
+    "Biomassa": 12,
+    "Steg": 42,
+    "Error": 0
+  },
+  {
+    "Total": 310,
+    "Sun": 31,
+    "Wind": 78,
+    "Nuclear": 14,
+    "Biomassa": 123,
+    "Steg": 64,
+    "Error": 0
+  },
+  {
+    "Total": 891,
+    "Sun": 464,
+    "Wind": 151,
+    "Nuclear": 143,
+    "Biomassa": 65,
+    "Steg": 68,
+    "Error": 0
+  },
+  {
+    "Total": 473,
+    "Sun": 42,
+    "Wind": 30,
+    "Nuclear": 251,
+    "Biomassa": 5,
+    "Steg": 145,
+    "Error": 0
+  }
+]

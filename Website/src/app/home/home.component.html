@@ -1,0 +1,21 @@
+<h1>Temporary Homepage</h1>
+
+<p-galleria class="gallery" [images]="images" panelWidth="1500" panelHeight="400" [showCaption]="false"></p-galleria>   
+
+
+<h1>Beschikbare energie Elia</h1>
+
+<p-fieldset legend="Extra info Elia" [toggleable]="true" [collapsed]="true">
+    Onderstaande grafiek is een infotabel van Energie verdeler Elia.
+    De tabel verteld iets meer over de verschillende energietypes die op dit moment beschikbaar zijn.
+</p-fieldset>
+
+<mat-tab-group mat-align-tabs="center"> 
+    <mat-tab label="Overzicht">
+        <p-chart height="600px" width="1600px" type="line" [data]="available"></p-chart>
+    </mat-tab>
+    <!-- <mat-tab label="Verbruik">
+        <p-chart height="600px" width="1600px" type="bar" [data]="data" (onDataSelect)="openDialog($event)"></p-chart>
+    </mat-tab> -->
+</mat-tab-group><br><br>
+

@@ -1,0 +1,53 @@
+<div id="container">
+    <div id="card">
+        <h2 id="card-header">Sign Up</h2>
+        <div id="card-content">
+            <span class="ui-float-label">
+                <input id="float-input" type="email" pInputText size="30" [(ngModel)]="user.email">
+                <label for="float-input">Email</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="password" pInputText size="30" [(ngModel)]="password">
+                <label for="float-input">Password</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" pInputText size="30" [(ngModel)]="user.name">
+                <label for="float-input">Name</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" pInputText size="30" [(ngModel)]="user.firstname">
+                <label for="float-input">First Name</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="tel" pInputText size="30" [(ngModel)]="user.phone">
+                <label for="float-input">Phone</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" pInputText size="30" [(ngModel)]="user.company">
+                <label for="float-input">Company</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" pInputText size="30" [(ngModel)]="user.adres">
+                <label for="float-input">Adres</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" pInputText size="30" [(ngModel)]="user.postalcode">
+                <label for="float-input">Postcode</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" pInputText size="30" [(ngModel)]="user.creditcard">
+                <label for="float-input">CreditCard</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" pInputText size="30" [(ngModel)]="user.cvc">
+                <label for="float-input">Cvc</label>
+            </span>
+
+            <button mat-raised-button color="primary" (click)="signUp()" [disabled]="buttonDisabled">Sign Up</button>
+
+            <div style="text-align: center;">
+                <span style="font-size: 16px; color: red;">{{error}}</span>
+            </div>
+        </div>
+    </div>
+</div>

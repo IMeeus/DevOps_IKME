@@ -1,0 +1,15 @@
+.title{
+    font-size: 45px;   
+}
+
+.ui-toolbar-group-left > * {
+    margin-right: 10px;
+}
+
+.ui-toolbar-group-right > * {
+    margin-left: 10px;
+}
+
+#page-content {
+    padding: 20px;
+}

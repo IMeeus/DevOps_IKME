@@ -1,0 +1,28 @@
+<div id="container" *ngIf="tableData; else elseBlock">
+    <p-table [value]="tableData">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Energie Type</th>
+                <th>Prijs per kWh</th>
+                <th>Totaal Aantal</th>
+                <th>Totale Prijs</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-data>
+            <tr>
+                <td> {{data.fuelType}}</td>
+                <td>‎€ {{data.pricePerKw | number: '.2'}}</td>
+                <td> {{data.totalKw | number: '.0'}} kWh</td>
+                <td>‎€ {{data.totalPrice | number: '.2'}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+    <br><br>
+    <div>
+        <canvas id="price-chart" width="300" height="300">{{ priceChart }}</canvas>
+    </div>
+</div>
+
+<ng-template #elseBlock>
+    <p-progressSpinner></p-progressSpinner>
+</ng-template>

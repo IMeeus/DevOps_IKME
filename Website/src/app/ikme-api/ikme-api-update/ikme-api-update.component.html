@@ -1,0 +1,16 @@
+<p>Hier kan je een bestaande planning aanpassen door:</p>
+<ul>
+    <li>De planning-id van een bestaande planning in te voeren.</li>
+    <li>Een aangepast planning-data json bestand te uploaden.</li>
+</ul>
+<br>
+<div>
+    <input id="plan-id-input" type="text" pKeyFilter="int" pInputText [(ngModel)]="InputId" placeholder="Plan Id">
+</div>
+<br>
+<input
+  style="display: none"
+  type="file" (change)="onFileChanged($event)"
+  #fileInput>
+<button pButton label="Select File" (click)="fileInput.click()" [disabled]="disableSelectFile" style="margin-right: 5px;"></button>
+<button pButton label="Update Plan" (click)="onUpload()" [disabled]="planToUpdate == null"></button>

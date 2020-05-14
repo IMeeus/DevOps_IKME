@@ -1,0 +1,24 @@
+<div id="container">
+    <div id="card">
+        <h2 id="card-header">Log In</h2>
+        <div id="card-content">
+            <span class="ui-float-label" style="margin-bottom: 30px;">
+                <input id="float-input" type="email" pInputText size="30" [(ngModel)]="email">
+                <label for="float-input">Email</label>
+            </span>
+            <span class="ui-float-label" style="margin-bottom: 5px;">
+                <input id="float-input" type="password" pInputText size="30" [(ngModel)]="password">
+                <label for="float-input">Password</label>
+            </span>
+            <a [routerLink]="['/forgot-password']" style="text-align: right; margin-bottom: 30px; font-size: 12px;"> Forgot Password? </a>
+
+            <button mat-raised-button color="primary" style="margin-bottom: 30px;" (click)="signIn()">Log In</button>
+            <span style="color: red; text-align: center; height: 60px; margin-bottom: 10px">{{error}}</span>
+            <div style="text-align: center;">
+                <p style="margin-bottom: 5px;">Not Registered Yet?</p>
+                <a [routerLink]="['/signup']" style="font-size: 12px;">SIGN UP NOW</a>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,24 @@
+<p-toolbar class="toolbar">
+  <div class="ui-toolbar-group-left">
+    <button pButton type="button" label="Nieuw" icon="pi pi-plus" (click)="OpenNewPlan()"></button>
+    <input
+    style="display: none"
+    type="file" (change)="OpenExcelPlan($event)"
+    #fileInput>
+    <button pButton type="button" label="Laad Excel" icon="pi pi-plus" (click)="fileInput.click()"></button>
+  </div>
+
+  <div class="ui-toolbar-group-right">
+    <button pButton class="info-button" type="button" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Info"></button>
+  </div>
+  <div class="searhbar"><input type="text" name="search" placeholder="Search..." [(ngModel)]="SearchName"/><button pButton type="button" icon="pi pi-search"></button></div>
+</p-toolbar>
+
+<p-dialog header="Info" [(visible)]="display">
+  Deze content bevat meer informatie over de opgeslagen en recente planningen. Verdere details komen nog maar dit is een
+  test.
+</p-dialog>
+
+<div id="page-content">
+  <app-saved-plans></app-saved-plans>
+</div>

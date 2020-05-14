@@ -1,0 +1,20 @@
+<div class="p-grid">
+    <div class="p-col-6"> Totaal </div>
+    <div class="p-col-6"> <p-spinner [(ngModel)]="localSvc.activePlan.Data[localSvc.activeQuarterIndex].total" (onChange)="TotalChange(localSvc.activePlan.Data[localSvc.activeQuarterIndex].total)" [min]="0" [step]="5" [size]="10"></p-spinner> </div>
+    <div class="p-col-6"> STEG </div>
+    <div class="p-col-6"> <p-spinner [(ngModel)]="localSvc.activePlan.Data[localSvc.activeQuarterIndex].steg"     (onChange)="ChartDataChange(4,localSvc.activePlan.Data[localSvc.activeQuarterIndex].steg)" [min]="0" [step]="5" [size]="10"></p-spinner> </div>
+    <div class="p-col-6"> Biomassa </div>
+    <div class="p-col-6"> <p-spinner [(ngModel)]="localSvc.activePlan.Data[localSvc.activeQuarterIndex].biomassa" (onChange)="ChartDataChange(3,localSvc.activePlan.Data[localSvc.activeQuarterIndex].biomassa)" [min]="0" [step]="5" [size]="10"></p-spinner> </div>
+    <div class="p-col-6"> Nuclear </div>
+    <div class="p-col-6"> <p-spinner [(ngModel)]="localSvc.activePlan.Data[localSvc.activeQuarterIndex].nuclear"  (onChange)="ChartDataChange(2,localSvc.activePlan.Data[localSvc.activeQuarterIndex].nuclear)" [min]="0" [step]="5" [size]="10"></p-spinner> </div>
+    <div class="p-col-6"> Wind </div>
+    <div class="p-col-6"> <p-spinner [(ngModel)]="localSvc.activePlan.Data[localSvc.activeQuarterIndex].wind"     (onChange)="ChartDataChange(1,localSvc.activePlan.Data[localSvc.activeQuarterIndex].wind)" [min]="0" [step]="5" [size]="10"></p-spinner> </div>
+    <div class="p-col-6"> Sun </div>
+    <div class="p-col-6"> <p-spinner [(ngModel)]="localSvc.activePlan.Data[localSvc.activeQuarterIndex].sun"      (onChange)="ChartDataChange(0,localSvc.activePlan.Data[localSvc.activeQuarterIndex].sun)" [min]="0" [step]="5" [size]="10"></p-spinner> </div>
+    <div class="p-col-6"> Error </div>
+    <div class="p-col-6"> 
+        <div *ngIf="localSvc.activePlan.Data[localSvc.activeQuarterIndex].error==0"> {{localSvc.activePlan.Data[localSvc.activeQuarterIndex].error}}</div>
+        <div matTooltip="Totaal energie is overschreden" *ngIf="localSvc.activePlan.Data[localSvc.activeQuarterIndex].error<0" style="color: red;"> {{localSvc.activePlan.Data[localSvc.activeQuarterIndex].error}}</div>
+        <div matTooltip="Er is nog energie op overschot" *ngIf="localSvc.activePlan.Data[localSvc.activeQuarterIndex].error>0" style="color: orange;"> {{localSvc.activePlan.Data[localSvc.activeQuarterIndex].error}}</div>
+    </div>
+</div>

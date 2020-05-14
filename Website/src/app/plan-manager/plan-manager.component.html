@@ -1,0 +1,42 @@
+<div id="container">
+    <div *ngIf="localSvc.activePlan != null; else elseBlock">
+        <app-plan-manager-toolbar></app-plan-manager-toolbar>
+        <div id="content">
+            <div class="p-grid p-justify-between">
+                <div class="p-col-4 content-item top-item">
+                    <div class="content-item-header">Energie Voorraad</div>
+                    <app-fuel-capacity></app-fuel-capacity>
+                </div>
+                <div class="p-col-4 content-item top-item">
+                    <div class="content-item-header">Energie Stabiliteit</div>
+                    <app-fuel-stability></app-fuel-stability>
+                </div>
+                <div class="p-col-4 content-item top-item">
+                    <div class="content-item-header">Energie Prijzen</div>
+                    <app-fuel-price></app-fuel-price>
+                </div>
+                <div class="p-col-6 content-item bot-item">
+                    <div class="content-item-header">Plan Overzicht</div>
+                    <app-plan-overview></app-plan-overview>
+                </div>  
+                <div class="p-col-3 content-item bot-item">
+                    <div class="content-item-header">Suggestie voor {{date | date:"HH:mm"}}</div>
+                    <app-quarter-suggester></app-quarter-suggester>
+                </div>
+                <div class="p-col-3 content-item bot-item">
+                    <div class="content-item-header">Verdeling voor {{date | date:"HH:mm"}}</div>
+                    <app-quarter-editor></app-quarter-editor>
+                </div>
+            </div>
+            <div style="height: 50px; display: flex; justify-content: space-between;">
+                <button type="button" pButton label="Vorig Kwartier" (click)="localSvc.PrevQuarter()" icon="pi pi-chevron-left"></button>
+                <igx-time-picker [(ngModel)]="date" mode="dropdown" format="HH:mm" [itemsDelta]="{hours:1, minutes:15}" [isSpinLoop]="false"></igx-time-picker>
+                <button type="button" pButton label="Volgend Kwartier" (click)="localSvc.NextQuarter()" icon="pi pi-chevron-right"></button>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #elseBlock>
+        <p-progressSpinner></p-progressSpinner>
+    </ng-template>
+</div>

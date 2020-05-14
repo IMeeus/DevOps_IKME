@@ -1,0 +1,24 @@
+<div *ngIf="tableData; else elseBlock;" id="container">
+    <p-table [value]="tableData">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Energie Type</th>
+                <th>Voorraad</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-data>
+            <tr>
+                <td>{{data.fuelType}}</td>
+                <td>{{data.capacity | number:'.0-0'}} MWh</td>
+            </tr>
+        </ng-template>
+    </p-table>
+    <br><br>
+    <div>
+        <canvas id="capacity-chart" width="300" height="300">{{ capacityChart }}</canvas>
+    </div>
+</div>
+
+<ng-template #elseBlock>
+    <p-progressSpinner></p-progressSpinner>
+</ng-template>

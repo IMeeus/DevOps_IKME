@@ -1,0 +1,10 @@
+<div id="container" style="display: flex;">
+    <div style="text-align: left;  width: 50%;">
+        <!-- <span style="font-size: 32px;">{{localSvc.activePlan.name}}</span> -->
+        <input id="plan-name" type="text" [(ngModel)]="localSvc.activePlan.Name">
+    </div>
+    <div style="text-align: right; width: 50%;">
+        <button mat-raised-button id="checkout-button" color="accent" (click)="savePlan()" [disabled]="!fuelPrices">Opslaan</button>
+        <button mat-raised-button id="checkout-button" color="accent" (click)="checkout($event)" [disabled]="!fuelPrices" style="margin-left: 20px;">Betalen</button>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<mat-toolbar *ngIf="authSvc.IsLoggedIn()" id="top-bar" color="primary" [class.mat-elevation-z10]="true">
+  <mat-toolbar-row style="height: 100px; line-height: 100px;">
+    <button mat-icon-button>  
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1 id="logo">IKME</h1>
+    <div style="display: flex; flex-flow: row nowrap;">
+      <a mat-button [routerLink]="['/home']"> Home </a>
+      <a mat-button [routerLink]="['/apitest']"> Api Test </a>
+      <a mat-button [routerLink]="['/plans-overview']"> Planningen </a>
+      <a mat-button [routerLink]="['/plan-manager']"> Plan V2 </a>
+      <a mat-button [routerLink]="['/login']" (click)="SignOut()"> SignOut </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div id="content" [ngStyle]="contentStyle">
+  <router-outlet></router-outlet>
+</div>

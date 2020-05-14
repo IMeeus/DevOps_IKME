@@ -1,0 +1,33 @@
+<div>
+    <input id="plan-id-input" type="text" pKeyFilter="int" pInputText [(ngModel)]="InputId" placeholder="Plan Id">
+</div>
+
+<br>
+<p-accordion *ngIf="plans?.length > 0">
+    <span *ngFor="let plan of plans; let i = index">
+        <p-accordionTab header="Plan {{plan.id}}">
+            <p-table [value]="plan.data">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Total</th>
+                        <th>Sun</th>
+                        <th>Wind</th>
+                        <th>Nuclear</th>
+                        <th>Biomassa</th>
+                        <th>Steg</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-data>
+                    <tr style="text-align: center;">
+                        <td>{{data.total}}</td>
+                        <td>{{data.sun}}</td>
+                        <td>{{data.wind}}</td>
+                        <td>{{data.nuclear}}</td>
+                        <td>{{data.biomassa}}</td>
+                        <td>{{data.steg}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </p-accordionTab>
+    </span>
+</p-accordion>
