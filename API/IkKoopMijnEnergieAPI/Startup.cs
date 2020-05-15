@@ -26,11 +26,11 @@ namespace IkKoopMijnEnergieAPI
         
         public void ConfigureServices(IServiceCollection services)
         {
-            var server = Configuration["DBServer"] ?? "localhost";
+            var server = Configuration["DBServer"] ?? "192.168.0.170";
             var port = Configuration["DBPort"] ?? "1433";
             var user = Configuration["DBUser"] ?? "sa";
             var password = Configuration["DBPassword"] ?? "Pa$$w0rd2020";
-            var database = Configuration["Database"] ?? "IkmeDB";
+            var database = Configuration["Database"] ?? "TestDB";
 
             services.AddDbContext<IkmeDbContext>(
                 options => options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));

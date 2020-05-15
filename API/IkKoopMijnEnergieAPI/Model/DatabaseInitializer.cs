@@ -28,7 +28,7 @@ namespace IkKoopMijnEnergieAPI.Model
         private static void LoadTestPlans(IkmeDbContext context)
         {
             List<QuarterData> data;
-            using (StreamReader r = new StreamReader(@".\Data\data.json"))
+            using (StreamReader r = new StreamReader(Directory.GetCurrentDirectory() + @"/Data/data.json"))
             {
                 var json = r.ReadToEnd();
                 data = JsonConvert.DeserializeObject<List<QuarterData>>(json);
@@ -45,7 +45,7 @@ namespace IkKoopMijnEnergieAPI.Model
             context.Plans.Add(plan);
 
             List<QuarterData> data2;
-            using (StreamReader r = new StreamReader(@".\Data\data2.json"))
+            using (StreamReader r = new StreamReader(Directory.GetCurrentDirectory() + @"/Data/data2.json"))
             {
                 var json = r.ReadToEnd();
                 data2 = JsonConvert.DeserializeObject<List<QuarterData>>(json);
