@@ -1,0 +1,14 @@
+---
+- name: Stop Container
+  hosts: docker
+  environment:
+    DOCKER_HOST: tcp://192.168.0.170:2376
+  tasks:
+    - name: Stop SQL Container
+      docker_container:
+        name: sql
+        state: absent
+    - name: Stop API Container
+      docker_container:
+        name: api
+        state: absent
