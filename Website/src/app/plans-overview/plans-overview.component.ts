@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { PlansOverviewService } from './plans-overview.service';
 import { QuarterData, PlanApiService, ApiPlan } from '@services/plan-api.service';
-import readXlsxFile from 'read-excel-file';
 
 @Component({
   selector: 'app-plans-overview',
@@ -44,35 +43,35 @@ export class PlansOverviewComponent implements OnInit {
     });
   }
 
-  async OpenExcelPlan(event: any){
-    let file = event.target.files[0];
-    let newData: QuarterData[] = [];
-    await readXlsxFile(file).then((rows: any) => {
-      for(let i = 1; i < rows.length; i++){
-        let newDataObject: QuarterData = {
-          total: rows[i][0],
-          sun: rows[i][1],
-          wind: rows[i][2],
-          nuclear: rows[i][3],
-          biomassa: rows[i][4],
-          steg: rows[i][5],
-          error: rows[i][6]
-        };
-        newData.push(newDataObject);  
-      }
-    });
+  // async OpenExcelPlan(event: any){
+  //   let file = event.target.files[0];
+  //   let newData: QuarterData[] = [];
+  //   await readXlsxFile(file).then((rows: any) => {
+  //     for(let i = 1; i < rows.length; i++){
+  //       let newDataObject: QuarterData = {
+  //         total: rows[i][0],
+  //         sun: rows[i][1],
+  //         wind: rows[i][2],
+  //         nuclear: rows[i][3],
+  //         biomassa: rows[i][4],
+  //         steg: rows[i][5],
+  //         error: rows[i][6]
+  //       };
+  //       newData.push(newDataObject);  
+  //     }
+  //   });
 
-    let newPlan: ApiPlan = {
-      name: "new excel plan",
-      date: new Date(),
-      data: newData
-    };
+  //   let newPlan: ApiPlan = {
+  //     name: "new excel plan",
+  //     date: new Date(),
+  //     data: newData
+  //   };
 
-    this.planApiSvc.CreatePlan(newPlan).subscribe(res => {
-      this.cookieSvc.set("active-plan-id", res.id.toString());
-      this.router.navigate(['/plan-manager']);
-    });
-  }
+  //   this.planApiSvc.CreatePlan(newPlan).subscribe(res => {
+  //     this.cookieSvc.set("active-plan-id", res.id.toString());
+  //     this.router.navigate(['/plan-manager']);
+  //   });
+  // }
 
   get SearchName() {
     return this.localSvc.SearchName;
