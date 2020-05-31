@@ -27,11 +27,17 @@ namespace IkKoopMijnEnergieAPI.Model
 
         private static void LoadTestPlans(IkmeDbContext context)
         {
-            List<QuarterData> data;
-            using (StreamReader r = new StreamReader(Directory.GetCurrentDirectory() + @"/Data/data.json"))
-            {
-                var json = r.ReadToEnd();
-                data = JsonConvert.DeserializeObject<List<QuarterData>>(json);
+            Random random = new Random();
+
+            var data = new List<QuarterData>();
+            for (int i = 0; i < 10; i++) {
+                var quarter = new QuarterData();
+                quarter.Total = random.Next(0, 1000);
+                quarter.Sun = random.Next(0, 1000);
+                quarter.Wind = random.Next(0, 1000);
+                quarter.Nuclear = random.Next(0, 1000);
+                quarter.Steg = random.Next(0, 1000);
+                quarter.Error = 0;
             }
 
             Plan plan = new Plan()
@@ -43,12 +49,16 @@ namespace IkKoopMijnEnergieAPI.Model
             };
 
             context.Plans.Add(plan);
-
-            List<QuarterData> data2;
-            using (StreamReader r = new StreamReader(Directory.GetCurrentDirectory() + @"/Data/data2.json"))
-            {
-                var json = r.ReadToEnd();
-                data2 = JsonConvert.DeserializeObject<List<QuarterData>>(json);
+            
+            var data2 = new List<QuarterData>();
+            for (int i = 0; i < 10; i++) {
+                var quarter = new QuarterData();
+                quarter.Total = random.Next(0, 1000);
+                quarter.Sun = random.Next(0, 1000);
+                quarter.Wind = random.Next(0, 1000);
+                quarter.Nuclear = random.Next(0, 1000);
+                quarter.Steg = random.Next(0, 1000);
+                quarter.Error = 0;
             }
 
             Plan plan2 = new Plan()
