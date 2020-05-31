@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'; 
 import { MessageService } from 'primeng/api';
 import { MatDialog } from '@angular/material/dialog';
-import { IkmeEliadataService } from '../services/ikme-eliadata.service';
+import { IkmeEliadataService } from '@services/ikme-eliadata.service';
 import { PlanManagerService } from '@app/plan-manager/plan-manager.service';
 
 @Component({

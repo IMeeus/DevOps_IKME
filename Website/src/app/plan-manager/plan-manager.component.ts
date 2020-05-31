@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { PlanManagerService } from './plan-manager.service';
-import { PlanApiService, QuarterData } from '@services/plan-api.service';
+import { PlanApiService } from '@services/plan-api.service';
 import { Plan } from './model/Plan';
-import { TagPlaceholder } from '@angular/compiler/src/i18n/i18n_ast';
 import { FuelApiService } from '@services/fuel-api.service';
 
 @Component({

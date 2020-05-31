@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChildren, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { FuelApiService } from '@services/fuel-api.service';
 import { Chart } from 'chart.js';
 
