@@ -26,7 +26,7 @@ namespace IkKoopMijnEnergieAPI
         
         public void ConfigureServices(IServiceCollection services)
         {
-            var server = Configuration["DBServer"] ?? "ms-sql-server";
+            var server = Configuration["DBServer"] ?? "192.168.0.170";
             var port = Configuration["DBPort"] ?? "1433";
             var user = Configuration["DBUser"] ?? "sa";
             var password = Configuration["DBPassword"] ?? "Peerappe304!";

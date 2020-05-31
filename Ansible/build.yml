@@ -1,0 +1,55 @@
+---
+- name: Build Test Environment
+  hosts: docker
+  environment:
+    DOCKER_HOST: tcp://192.168.0.170:2376
+  tasks:
+    - name: Make Database directory
+      file:
+        path: ./setup/test_db
+        state: directory
+    - name: Copy Dockerfile to Database directory
+      copy:
+        src: ./../Docker/db/Dockerfile
+        dest: ./setup/test_db/Dockerfile
+    - name: Build Database Image
+      docker_image:
+        name: test_db
+        tag: latest
+        path: ./setup/test_db
+        state: present
+    - name: Create Database container
+      docker_container:
+        name: test_db
+        image: test_db
+        published_ports: 1433:1433
+        detach: yes
+        healthcheck:
+          test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "Peerappe304!" -Q "SELECT 1" || exit 1
+          interval: 10s
+          timeout: 3s
+          retries: 10
+          start_period: 10s
+    - name: Create API Directory
+      file:
+        path: ./setup/test_api
+        state: directory
+    - name: Copy Dockerfile to API directory
+      copy:
+        src: ./../Docker/api/Dockerfile
+        dest: ./setup/test_api/Dockerfile
+    - name: Build API Image
+      docker_image:
+        name: test_api
+        tag: latest
+        path: ./setup/test_api
+        state: present
+    - name: Timeout
+      wait_for:
+        timeout: 10
+    - name: Create API container
+      docker_container:
+        name: test_api
+        image: test_api
+        published_ports: 5000:80
+        detach: yes
