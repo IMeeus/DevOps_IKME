@@ -1,3 +1,3 @@
 export const environment = {
-    apiUrl: window["env"]["apiUrl"] || "default"
+    apiUrl: window["env"]["apiUrl"] || ""
 };
