@@ -26,12 +26,12 @@ namespace IkKoopMijnEnergieAPI
         
         public void ConfigureServices(IServiceCollection services)
         {
-            var remote = Configuration["Remote"] ?? "false";
-            var server = Configuration["DBServer"] ?? "192.168.0.170";
-            var port = Configuration["DBPort"] ?? "1433";
-            var user = Configuration["DBUser"] ?? "sa";
-            var password = Configuration["DBPassword"] ?? "Peerappe304!";
-            var database = Configuration["Database"] ?? "ikmedb";
+            var remote = Configuration["REMOTE"] ?? "false";
+            var server = Configuration["DB_SERVER"] ?? "192.168.0.170";
+            var port = Configuration["DB_PORT"] ?? "1433";
+            var user = Configuration["DB_USER"] ?? "sa";
+            var password = Configuration["DB_PASSWORD"] ?? "Peerappe304!";
+            var database = Configuration["DB_NAME"] ?? "ikmedb";
 
             if (remote == "false")
             {

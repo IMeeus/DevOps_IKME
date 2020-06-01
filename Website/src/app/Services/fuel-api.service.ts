@@ -10,11 +10,11 @@ export class FuelApiService {
   constructor(private http: HttpClient) { }
 
   GetFuels(name: string = ""): Promise<Fuel[]> {
-    return this.http.get<Fuel[]>(`${environment.apiUrl}/api/v1/fuels?name=${name}`).toPromise();
+    return this.http.get<Fuel[]>(`http://192.168.0.170:5000/api/v1/fuels?name=${name}`).toPromise();
   }
 
   UpdateFuel(fuel: Fuel): Promise<Fuel> {
-    return this.http.put<Fuel>(`${environment.apiUrl}/api/v1/fuels`, fuel).toPromise();
+    return this.http.put<Fuel>(`http://192.168.0.170:5000/api/v1/fuels`, fuel).toPromise();
   }
 }
 

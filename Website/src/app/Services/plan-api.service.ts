@@ -14,27 +14,27 @@ export class PlanApiService {
 
   GetAllPlans(name: string = '') {
     let uid = this.authSvc.GetCurrentUser().uid;
-    return this.http.get<ApiPlan[]>(`${environment.apiUrl}/api/v1/plans?uid=${uid}&name=${name}`);
+    return this.http.get<ApiPlan[]>(`http://192.168.0.170:5000/api/v1/plans?uid=${uid}&name=${name}`);
   }
 
   GetPlan(id: number) {
-    return this.http.get<ApiPlan>(`${environment.apiUrl}/api/v1/plans/${id}`);
+    return this.http.get<ApiPlan>(`http://192.168.0.170:5000/api/v1/plans/${id}`);
   }
 
   CreatePlan(newPlan : ApiPlan) {
     let uid = this.authSvc.GetCurrentUser().uid;
     newPlan.uid = uid;
-    return this.http.post<ApiPlan>(`${environment.apiUrl}/api/v1/plans`, newPlan);
+    return this.http.post<ApiPlan>(`http://192.168.0.170:5000/api/v1/plans`, newPlan);
   }
 
   UpdatePlan(updPlan: ApiPlan) {
     let uid = this.authSvc.GetCurrentUser().uid;
     updPlan.uid = uid;
-    return this.http.put<ApiPlan>(`${environment.apiUrl}/api/v1/plans`, updPlan);
+    return this.http.put<ApiPlan>(`http://192.168.0.170:5000/api/v1/plans`, updPlan);
   }
 
   DeletePlan(id: number) {
-    return this.http.delete<ApiPlan>(`${environment.apiUrl}/api/v1/plans/${id}`);
+    return this.http.delete<ApiPlan>(`http://192.168.0.170:5000/api/v1/plans/${id}`);
   }
 }
 
