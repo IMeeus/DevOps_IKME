@@ -26,18 +26,24 @@ namespace IkKoopMijnEnergieAPI
         
         public void ConfigureServices(IServiceCollection services)
         {
+            var remote = Configuration["Remote"] ?? "false";
             var server = Configuration["DBServer"] ?? "192.168.0.170";
             var port = Configuration["DBPort"] ?? "1433";
             var user = Configuration["DBUser"] ?? "sa";
             var password = Configuration["DBPassword"] ?? "Peerappe304!";
             var database = Configuration["Database"] ?? "ikmedb";
 
-            services.AddDbContext<IkmeDbContext>(
+            if (remote == "false")
+            {
+                services.AddDbContext<IkmeDbContext>(
+                    options => options.UseSqlServer(
+                        Configuration.GetConnectionString("LocalConnection")));
+            }
+            else
+            {
+                services.AddDbContext<IkmeDbContext>(
                 options => options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));
-
-            //services.AddDbContext<IkmeDbContext>(
-            //    options => options.UseSqlServer(
-            //        Configuration.GetConnectionString("LocalConnection")));
+            }
 
             services.AddCors(options =>
             {   

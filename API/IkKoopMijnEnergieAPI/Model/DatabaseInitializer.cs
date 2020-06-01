@@ -30,14 +30,16 @@ namespace IkKoopMijnEnergieAPI.Model
             Random random = new Random();
 
             var data = new List<QuarterData>();
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 96; i++) {
                 var quarter = new QuarterData();
                 quarter.Total = random.Next(0, 1000);
                 quarter.Sun = random.Next(0, 1000);
                 quarter.Wind = random.Next(0, 1000);
                 quarter.Nuclear = random.Next(0, 1000);
+                quarter.Biomassa = random.Next(0, 1000);
                 quarter.Steg = random.Next(0, 1000);
                 quarter.Error = 0;
+                data.Add(quarter);
             }
 
             Plan plan = new Plan()
@@ -51,14 +53,16 @@ namespace IkKoopMijnEnergieAPI.Model
             context.Plans.Add(plan);
             
             var data2 = new List<QuarterData>();
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 96; i++) {
                 var quarter = new QuarterData();
                 quarter.Total = random.Next(0, 1000);
                 quarter.Sun = random.Next(0, 1000);
                 quarter.Wind = random.Next(0, 1000);
                 quarter.Nuclear = random.Next(0, 1000);
+                quarter.Biomassa = random.Next(0, 1000);
                 quarter.Steg = random.Next(0, 1000);
                 quarter.Error = 0;
+                data2.Add(quarter);
             }
 
             Plan plan2 = new Plan()

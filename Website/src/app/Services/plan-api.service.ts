@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'; 
 import { AuthService } from '@services/auth.service.ts';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,27 +14,27 @@ export class PlanApiService {
 
   GetAllPlans(name: string = '') {
     let uid = this.authSvc.GetCurrentUser().uid;
-    return this.http.get<ApiPlan[]>(`http://localhost:44725/api/v1/plans?uid=${uid}&name=${name}`);
+    return this.http.get<ApiPlan[]>(`${environment.apiUrl}/api/v1/plans?uid=${uid}&name=${name}`);
   }
 
   GetPlan(id: number) {
-    return this.http.get<ApiPlan>(`http://localhost:44725/api/v1/plans/${id}`);
+    return this.http.get<ApiPlan>(`${environment.apiUrl}/api/v1/plans/${id}`);
   }
 
   CreatePlan(newPlan : ApiPlan) {
     let uid = this.authSvc.GetCurrentUser().uid;
     newPlan.uid = uid;
-    return this.http.post<ApiPlan>(`http://localhost:44725/api/v1/plans`, newPlan);
+    return this.http.post<ApiPlan>(`${environment.apiUrl}/api/v1/plans`, newPlan);
   }
 
   UpdatePlan(updPlan: ApiPlan) {
     let uid = this.authSvc.GetCurrentUser().uid;
     updPlan.uid = uid;
-    return this.http.put<ApiPlan>(`http://localhost:44725/api/v1/plans`, updPlan);
+    return this.http.put<ApiPlan>(`${environment.apiUrl}/api/v1/plans`, updPlan);
   }
 
   DeletePlan(id: number) {
-    return this.http.delete<ApiPlan>(`http://localhost:44725/api/v1/plans/${id}`);
+    return this.http.delete<ApiPlan>(`${environment.apiUrl}/api/v1/plans/${id}`);
   }
 }
 
